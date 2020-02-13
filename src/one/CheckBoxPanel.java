@@ -103,5 +103,6 @@ public class CheckBoxPanel extends JPanel implements ItemListener {
         }
         pictureName.setCharAt(index, c);
         updatePicture();
+
     }
 }
