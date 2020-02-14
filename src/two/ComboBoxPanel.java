@@ -28,6 +28,10 @@ public class ComboBoxPanel extends JPanel implements ActionListener {
 
     private void updatePictureLabel(String petName) {
         ImageIcon icon = createImageIcon(petName);
+        if(icon != null){
+           pictureLabel.setIcon(icon);    
+        }
+        System.out.println("No icon with name '"  + petName + "'");
     }
 
     private ImageIcon createImageIcon(String fileName) {
@@ -56,6 +60,7 @@ public class ComboBoxPanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         JComboBox<String> comboBox = (JComboBox<String>)e.getSource();
         String petName = (String) comboBox.getSelectedItem();
+        updatePictureLabel(petName);
 
     }
 
