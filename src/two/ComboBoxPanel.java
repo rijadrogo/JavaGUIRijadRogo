@@ -29,7 +29,8 @@ public class ComboBoxPanel extends JPanel implements ActionListener {
     private void updatePictureLabel(String petName) {
         ImageIcon icon = createImageIcon(petName);
         if(icon != null){
-           pictureLabel.setIcon(icon);    
+           pictureLabel.setIcon(icon);
+           return;
         }
         System.out.println("No icon with name '"  + petName + "'");
     }
