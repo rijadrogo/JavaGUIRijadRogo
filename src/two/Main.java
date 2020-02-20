@@ -7,3 +7,4 @@ public class Main {
         java.awt.EventQueue.invokeLater(RadioButtonLabel::createAndShowUI);
     }
 }
+
