@@ -65,7 +65,7 @@ public class RadioButtonLabel extends JPanel implements ActionListener {
         return null;
     }
 
-    private static void createAndShowUI() {
+    public static void createAndShowUI() {
         JFrame frame = new JFrame("Demonstracija koristenja dugmica");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

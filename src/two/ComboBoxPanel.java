@@ -45,7 +45,7 @@ public class ComboBoxPanel extends JPanel implements ActionListener {
     }
 
 
-    private static void createAndShowUI() {
+    public static void createAndShowUI() {
         JFrame frame = new JFrame("Demonstracija koristenja dugmica");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -65,7 +65,5 @@ public class ComboBoxPanel extends JPanel implements ActionListener {
 
     }
 
-    public static void main(String [] args){
-        java.awt.EventQueue.invokeLater(ComboBoxPanel::createAndShowUI);
-    }
+
 }
