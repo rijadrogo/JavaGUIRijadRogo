@@ -74,11 +74,6 @@ public class CheckBoxPanel extends JPanel implements ItemListener {
         }
     }
 
-    public static void main(String[] args) {
-
-        java.awt.EventQueue.invokeLater(CheckBoxPanel::createAndShowUI);
-    }
-
     // cght
     @Override
     public void itemStateChanged(ItemEvent e) {
